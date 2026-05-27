@@ -26,9 +26,3 @@ func PrintDigits() {
 	}
 	z01.PrintRune('\n')
 }
-
-func main() {
-	PrintAlphabet()
-	PrintReverse()
-	PrintDigits()
-}
