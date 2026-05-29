@@ -26,3 +26,27 @@ func PrintDigits() {
 	}
 	z01.PrintRune('\n')
 }
+
+func PrintDigitsRecursive(digits int) int {
+
+	for i := 0; i < digits; i++ {
+
+		if digits == 0 {
+			return 0
+		}
+
+		result := 0
+		if i > 1 {
+			result = PrintDigitsRecursive(digits - 1)
+		}
+
+		return result
+	}
+
+	return 0
+}
+
+func main() {
+
+	PrintDigitsRecursive(5)
+}
