@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"piscine/piscine"
+	"piscine"
 )
 
 func main() {
@@ -12,5 +12,11 @@ func main() {
 	// fmt.Println(piscine.CTS("HelloWorld"))
 	// piscine.IsNegative(25)
 	// piscine.PrintComb()
-	fmt.Println(piscine.RecursiveFactorial(5))
+	a := 13
+	b := 2
+	var div int
+	var mod int
+	piscine.DivMod(a, b, &div, &mod)
+	fmt.Println(div)
+	fmt.Println(mod)
 }
