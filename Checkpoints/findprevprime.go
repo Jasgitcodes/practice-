@@ -5,7 +5,7 @@ func FindPrevPrime(nb int) int {
 		return 0
 	}
 
-	for nb >= 2 {
+	for nb > 2 {
 
 		isPrime := true
 

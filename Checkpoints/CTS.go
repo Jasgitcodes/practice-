@@ -1,53 +1,91 @@
 package piscine
 
-func CTS(s string) string {
+// func CTS(s string) string {
 
+// 	if s == "" {
+// 		return s
+// 	}
+
+// 	result := ""
+// 	b := []byte(s)
+
+// 	for i := 0; i < len(b); i++ {
+
+// 		if (b[i] < 'A' || b[i] > 'Z') && (b[i] < 'a' || b[i] > 'z') {
+// 			return s
+// 		}
+
+// 		if i > 0 && b[i] >= 'A' && b[i] <= 'Z' && b[i-1] >= 'A' && b[i-1] <= 'Z' {
+// 			return s
+// 		}
+// 	}
+
+// 	if b[len(b)-1] >= 'A' && b[len(b)-1] <= 'Z' {
+// 		return s
+// 	}
+
+// 	for i := 0; i < len(b); i++ {
+// 		if b[i] >= 'A' && b[i] <= 'Z' {
+// 			if i != 0 {
+// 				result += "_"
+// 			}
+
+// 			result += string(b[i] + 32)
+// 		} else {
+// 			result += string(b[i])
+// 		}
+// 	}
+
+// 	return result
+// }
+
+func CTS(s string) string {
 	if s == "" {
+		return ""
+	}
+
+	if !isValidCamelCase(s) {
 		return s
 	}
 
 	result := ""
-	b := []byte(s)
-
-	for i := 0; i < len(b); i++ {
-
-		if (b[i] < 'A' || b[i] > 'Z') && (b[i] < 'a' || b[i] > 'z') {
-			return s
-		}
-
-		if i > 0 && b[i] >= 'A' && b[i] <= 'Z' && b[i-1] >= 'A' && b[i-1] <= 'Z' {
-			return s
-		}
-	}
-
-	if b[len(b)-1] >= 'A' && b[len(b)-1] <= 'Z' {
-		return s
-	}
-
-	for i := 0; i < len(b); i++ {
-		if b[i] >= 'A' && b[i] <= 'Z' {
-			if i != 0 {
+	for i, char := range s {
+		if char >= 'A' && char <= 'Z' {
+			if i > 0 {
 				result += "_"
 			}
-
-			result += string(b[i] + 32)
+			result += string(char)
 		} else {
-			result += string(b[i])
+			result += string(char)
 		}
 	}
 
 	return result
 }
 
-// func main() {
+func isValidCamelCase(s string) bool {
+	for i, char := range s {
+		if char >= '0' && char <= '9' {
+			return false
+		}
 
-// 	case1 := cTS("CamelCase")
-// 	case2 := cTS("camelCase")
-// 	case3 := cTS("camelCase1")
-// 	case4 := cTS("camelCAse")
+		if (char < 'A' || char > 'Z') && (char < 'a' || char > 'z') {
+			return false
+		}
 
-// 	fmt.Println(case1)
-// 	fmt.Println(case2)
-// 	fmt.Println(case3)
-// 	fmt.Println(case4)
-// }
+		if char >= 'A' && char <= 'Z' {
+			if i == len(s)-1 {
+				return false
+			}
+
+			if i > 0 {
+				prevChar := rune(s[i-1])
+				if prevChar >= 'A' && prevChar <= 'Z' {
+					return false
+				}
+			}
+		}
+	}
+
+	return true
+}

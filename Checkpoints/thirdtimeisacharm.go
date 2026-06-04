@@ -1,6 +1,6 @@
 package piscine
 
-func ThirdCrime(s string) string {
+func ThirdTimeIsaCharm(s string) string {
 
 	if len(s) < 3 {
 		return "\n"
