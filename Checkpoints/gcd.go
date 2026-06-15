@@ -1,7 +1,6 @@
 package piscine
 
 func GCD(a, b uint) uint {
-
 	if a == 0 || b == 0 {
 		return 0
 	}

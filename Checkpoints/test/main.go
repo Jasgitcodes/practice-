@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+
 	piscine "piscine/Checkpoints"
 )
 
 func main() {
-
 	// fmt.Println(piscine.DigitLen(-150, 10))
 	// fmt.Println(piscine.DigitLength(150, 10))
 	// fmt.Println(piscine.LastWord("hello world"))
@@ -16,8 +16,8 @@ func main() {
 	// fmt.Println(piscine.CTS("camelCaseIsTheBestCaseEver"))
 	// fmt.Println(piscine.CTS("CamelCase1"))
 	// fmt.Println(piscine.CTS("CamelCAse"))
-	fmt.Println(piscine.HashCode("123456789"))
-	fmt.Println(piscine.GCD(42, 10))
+	// fmt.Println(piscine.HashCode("123456789"))
+	// fmt.Println(piscine.GCD(42, 10))
 
 	// fmt.Print(piscine.FindPrevPrime(36))
 	// fmt.Print(piscine.PrimeFindPrev(36))
@@ -39,6 +39,16 @@ func main() {
 
 	// piscine.PrintMemory([10]byte{'H', 'E', 'l', 'L', 'o', 16, 21, '*'})
 
-	piscine.PrintRevComb()
+	// piscine.Display()
 
+	// func main() {
+	input1 := []uint{2, 3, 1, 1, 4}
+	fmt.Println(piscine.CanJump(input1))
+
+	input2 := []uint{3, 2, 1, 0, 4}
+	fmt.Println(piscine.CanJump(input2))
+
+	input3 := []uint{0}
+	fmt.Println(piscine.CanJump(input3))
+	// }
 }

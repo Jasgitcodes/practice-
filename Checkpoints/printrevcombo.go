@@ -3,7 +3,6 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintRevComb() {
-
 	var x, y, z rune
 
 	for x = 9; x >= 2; x-- {

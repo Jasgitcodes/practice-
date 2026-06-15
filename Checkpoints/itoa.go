@@ -1,7 +1,6 @@
 package piscine
 
 func Itoa(n int) string {
-
 	result := ""
 	for n > 0 {
 		digit := n % 10
@@ -14,7 +13,6 @@ func Itoa(n int) string {
 }
 
 func Atoi(s string) int {
-
 	result := 0
 	for _, char := range s {
 

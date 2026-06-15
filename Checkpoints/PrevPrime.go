@@ -1,7 +1,6 @@
 package piscine
 
 func PrimeFindPrev(nb int) int {
-
 	if nb <= 2 {
 		return 0
 	}

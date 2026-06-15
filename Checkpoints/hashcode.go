@@ -1,7 +1,6 @@
 package piscine
 
 func HashCode(dec string) string {
-
 	size := len(dec)
 	asci := 0
 	result := ""

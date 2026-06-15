@@ -1,7 +1,6 @@
 package piscine
 
 func LastWord(s string) string {
-
 	runes := []rune(s)
 	end := len(runes) - 1
 
