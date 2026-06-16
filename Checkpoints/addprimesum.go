@@ -62,7 +62,7 @@ func PrintInt(number int) {
 	for number > 0 {
 		convert := rune(number%10) + '0'
 		digit = append([]rune{convert}, digit...)
-		number = number / 10
+		number /= 10
 	}
 
 	for _, d := range digit {
