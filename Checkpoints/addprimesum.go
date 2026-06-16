@@ -41,9 +41,6 @@ func AddPrimeSum(c int) int {
 	for i := 2; i <= c; i++ {
 		if IsPrime(i) {
 			sum += i
-
-			fmt.Printf("%v + ", i)
-
 		}
 	}
 	fmt.Println()
@@ -87,7 +84,6 @@ func Display() {
 	}
 
 	result := AddPrimeSum(n)
-
 	PrintInt(result)
 	z01.PrintRune('\n')
 }

@@ -2,50 +2,11 @@ package main
 
 import (
 	"fmt"
+
 	piscine "piscine/Checkpoints"
 )
 
 func main() {
-	// fmt.Println(piscine.DigitLen(-150, 10))
-	// fmt.Println(piscine.DigitLength(150, 10))
-	// fmt.Println(piscine.LastWord("hello world"))
-	// fmt.Println(piscine.FishChip(6))
-	// fmt.Println(piscine.CTS("CamelCase"))
-	// fmt.Println(piscine.CTS("camelCase"))
-	// fmt.Println(piscine.CTS("camelCaseIsTheBestCaseEver"))
-	// fmt.Println(piscine.CTS("CamelCase1"))
-	// fmt.Println(piscine.CTS("CamelCAse"))
-	// fmt.Println(piscine.HashCode("123456789"))
-	// fmt.Println(piscine.GCD(42, 10))
-
-	// fmt.Print(piscine.FindPrevPrime(36))
-	// fmt.Print(piscine.PrimeFindPrev(36))
-	// fmt.Print(piscine.FromTo(1, 10))
-	// fmt.Println()
-	// fmt.Print(piscine.FromTo(10, 1))
-	// fmt.Println()
-
-	// fmt.Println(piscine.IsCapitalized("Hello! How are you?"))
-	// fmt.Println(piscine.IsCapitalized("Hello How Are You"))
-
-	// fmt.Println(piscine.ThirdTimeIsaCharm("123456789"))
-	// fmt.Println()
-	// fmt.Println(piscine.Atoi("1251"))
-	// result1 := piscine.Itoa(1251)
-	// result := piscine.Atoi("1251")
-	// fmt.Printf("tyep of : %T | value : %v\n", result1, result1)
-	// fmt.Printf("tyep of : %T | value : %v\n", result, result)
-
-	// piscine.PrintMemory([10]byte{'H', 'E', 'l', 'L', 'o', 16, 21, '*'})
-
-	// piscine.Display()
-
-	// piscine.Chunk([]int{}, 10)
-	// piscine.Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 0)
-	// piscine.Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 3)
-	// piscine.Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 5)
-	// piscine.Chunk([]int{0, 1, 2, 3, 4, 5, 6, 7}, 4)
 
 	fmt.Print(piscine.FromTo(10, 1))
-
 }

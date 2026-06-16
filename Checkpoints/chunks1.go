@@ -13,7 +13,6 @@ func printNBR(n int) {
 }
 
 func Chunks1(slice []int, size int) {
-
 	if size <= 0 {
 		z01.PrintRune('\n')
 		return

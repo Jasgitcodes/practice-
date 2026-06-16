@@ -1,14 +1,13 @@
 package piscine
 
 func ConcatSlice(slice1, slice2 []int) []int {
-
 	var result []int
 
-	for i, _ := range slice1 {
+	for i := range slice1 {
 		result = append(result, slice1[i])
 	}
 
-	for i, _ := range slice2 {
+	for i := range slice2 {
 		result = append(result, slice2[i])
 	}
 
